@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-06-03T14:53:20.867197" rpa="false" schemaversion="5">
+<suite id="s1" name="Real Login Test" source="C:\Users\User\Documents\GitHub\robotframework-web-tests\tests\real_login_test.robot">
+<test id="s1-t1" name="Valid Login Should Succeed" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-03T14:53:21.144253" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-03T14:53:21.142836" elapsed="39.231327"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-06-03T14:54:00.374619" elapsed="0.031692"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-03T14:54:00.407217" level="INFO">Typing text 'student' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-03T14:54:00.406631" elapsed="0.137986"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-03T14:54:00.545190" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-03T14:54:00.544936" elapsed="0.061663"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-06-03T14:54:00.607304" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-03T14:54:00.607026" elapsed="3.385023"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-06-03T14:54:04.005144" level="INFO">Current page contains text 'Logged In Successfully'.</msg>
+<arg>Logged In Successfully</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-06-03T14:54:03.992371" elapsed="0.012921"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-03T14:54:04.005613" elapsed="2.381190"/>
+</kw>
+<status status="PASS" start="2026-06-03T14:53:21.141669" elapsed="45.245519"/>
+</test>
+<status status="PASS" start="2026-06-03T14:53:20.868534" elapsed="45.519346"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Real Login Test" id="s1" pass="1" fail="0" skip="0">Real Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
